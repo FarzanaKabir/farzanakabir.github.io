@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "author": "Farzana Kabir",
+  "license": "MIT"
+}
