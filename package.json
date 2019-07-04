@@ -1,11 +1,16 @@
 {
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "touch-cli": "^0.0.1"
   },
   "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
   "author": "Farzana Kabir",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }
