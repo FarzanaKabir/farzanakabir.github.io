@@ -1,4 +1,10 @@
 @import "config";
+@import "menu";
+@import "mobile";
+
+html{
+  font-size: 10px;
+}
 
 * {
   box-sizing: border-box;
@@ -7,7 +13,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -36,7 +42,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 }
 
@@ -56,7 +62,7 @@ main{
 
       &:hover{
         color: $secondary-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
