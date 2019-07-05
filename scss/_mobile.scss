@@ -44,8 +44,8 @@
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-  
-  .menu-branding{
+
+  .menu-branding {
     height: 25vh;
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
@@ -53,12 +53,17 @@
     -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
 
-    .portrait{
+    .portrait {
       background: url('../img/potrait.jpg');
       background-size: cover;
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr;
   }
 }
 
