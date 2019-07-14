@@ -50,6 +50,63 @@ header {
   color: $secondary-color;
 }
 
+
+//section
+.responsive-image {
+  width: 100%;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.section-title {
+  color: #021533;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-top: 0;
+  border-bottom: 1px solid #021533;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.section-title2 {
+  font-weight: bold;
+  color: $secondary-color;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  padding: 5px 10px 5px 15px;
+  border-left: 4px solid $secondary-color;
+  margin: 20px 0;
+}
+
+
+.section-item-title-1 {
+  font-weight: bold;
+  color: #021533;
+  color: #333;
+  padding-left: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 8px;
+  letter-spacing: -1px;
+}
+
+.section-item-title-2 {
+  font-weight: bold;
+  color: #021533;
+  padding-left: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 8px;
+  letter-spacing: -1px;
+  border-bottom: 1px dotted #021533;
+  padding-bottom: 5px;
+}
+
 main {
   padding: 4rem;
   min-height: calc(100vh);
@@ -115,6 +172,96 @@ main {
   }
 }
 
+/*============================================================================
+  >>  10. SECTION: Resume
+  ============================================================================
+*/
+.resume-info {
+
+  .graduation-time,
+  .jobs {
+    line-height: 15px;
+    font-style: italic;
+    color: #555;
+    font-size: 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid $secondary-color;
+    padding-bottom: 5px;
+  }
+
+  .graduation-description p {
+    font-size: 12px;
+  }
+
+  .section-education {
+    grid-area: section-education;
+  }
+
+  .section-experience {
+    grid-area: section-experience;
+  }
+
+  .section-education,
+  .section-experience {
+    display: grid;
+    grid-gap: .7rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'section-title2 section-title2' 'resume-item-1 resume-item-2' 'resume-item-3 resume-item-4' 'resume-item-5 resume-item-6';
+    margin-bottom: 40px;
+
+    .resume-item-1 {
+      grid-area: resume-item-1;
+    }
+
+    .resume-item-2 {
+      grid-area: resume-item-2;
+    }
+
+    .resume-item-3 {
+      grid-area: resume-item-3;
+    }
+
+    .resume-item-4 {
+      grid-area: resume-item-4;
+    }
+
+    .resume-item-5 {
+      grid-area: resume-item-5;
+    }
+
+    .resume-item-6 {
+      grid-area: resume-item-6;
+    }
+
+    .resume-item {
+      padding: 15px;
+      border: 4px double $secondary-color;
+      margin-bottom: 15px;
+    }
+  }
+
+  .resume-buttons {
+    margin-bottom: 30px;
+  }
+
+  .header-page-buttons {
+    margin-top: -20px;
+  }
+
+  .page-footer {
+    border-top: 1px solid $border-top-color;
+    padding-top: 20px;
+  }
+
+  .footer-quote {
+    color: $primary-color;
+    font-size: 11px;
+    border-top: 1px solid $border-top-color;
+    padding-top: 10px;
+  }
+}
+
+
 //work/projects
 .projects {
   display: grid;
@@ -134,26 +281,26 @@ main {
 }
 
 //contact page
-.boxes{
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
 
-  div{
+  div {
     font-size: 2rem;
     border: 3px #ffffff solid;
     padding: 0.5rem 1rem;
     margin-bottom: 3rem;
     @include easeOut;
 
-    &:hover{
+    &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
 
-      span{
+      span {
         color: set-text-color($secondary-color);
       }
     }
@@ -184,6 +331,118 @@ main {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333333;
+}
+
+/* ==========================================================
+! 03. Buttons
+========================================================== */
+a:focus {
+  outline: none;
+}
+
+.btn {
+  font-weight: bold;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 0;
+  font-size: 12px;
+  padding: 10px 20px;
+  @include easeOut;
+  margin-bottom: 2px;
+
+  &:hover {
+    background: $secondary-color;
+    color: #ffffff;
+  }
+}
+
+
+.btn-default {
+  display: inline-block;
+  padding: 10px 20px;
+  background: $secondary-color !important;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  @include easeOut;
+  border: 0 solid transparent !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    @include easeOut;
+    background: #021533;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #ffffff;
+    border: 0 solid transparent !important;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+
+.btn-default3 {
+  background: #d9212a;
+  color: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #009d9b;
+    color: #ffffff;
+    @include easeOut;
+  }
+}
+
+
+.btn-default2 {
+  font-size: 9px;
+  background: #021533;
+  font-weight: lighter;
+}
+
+.btn-nobg {
+  background-color: transparent;
+  border: 1px solid #021533;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  @include easeOut;
+  font-size: 18px;
+  height: 46px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #021533;
+
+  &:hover {
+    background: #021533;
+    color: #ffffff;
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+.btn-fluid {
+  width: 100%;
 }
 
 #main-footer {
