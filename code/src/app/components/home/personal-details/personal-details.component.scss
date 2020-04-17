@@ -1,0 +1,109 @@
+//************ Header css start ************//
+.personal-details {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  .contact-info {
+    border-radius: 5px;
+    padding: 30px 40px 20px;
+    background: #FFAD01;
+    color: #fff;
+
+    .info {
+      display: flex;
+      align-items: center;
+      .right-area{
+        margin-left: 25px;
+        p{
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+//********** header css end ********//
+//********** intro css start ********//
+.intro-section{
+  padding-top: 200px;
+  position: relative;
+  z-index: 1;
+  background: #28023D;
+  &:before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, .2);
+  }
+  .intro{
+    width: 65%;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 100px;
+    text-align: center;
+    background: #fff;
+    .profile-pic{
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      top: -100px;
+      margin-bottom: -70px;
+      img{
+        width: 100%;
+      }
+    }
+    .information{
+      padding: 0;
+      li{
+        display: block;
+        margin: 5px 0;
+        font-size: 16px;
+      }
+    }
+    .social-icon{
+      padding: 0;
+      margin-top: 40px;
+
+      li{
+        height: 35px;
+        line-height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        margin: 0 5px 5px;
+        background: #887392;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        &:hover{
+          background: #FFAD01;
+        }
+        a{
+          color: #fff;
+        }
+      }
+    }
+    .download-btn{
+      margin-top: 50px !important;
+      .dwnload-btn{
+        padding: 15px 30px;
+        border-radius: 4px;
+        margin-top: 30px;
+        box-shadow: inset 0 0px 4px rgba(0,0,0,.3);
+        background: #FFAD01;
+        color: #fff;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease
+      }
+    }
+  }
+}
+//********** intro css end ********//
