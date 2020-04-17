@@ -27,7 +27,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="E:\Rinky\farzanakabir.github.io\code\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,13 +100,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="v0.0.1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="581" y="28" key="CommitChangelistDialog2" timestamp="1587131632947">
+    <state x="581" y="28" key="CommitChangelistDialog2" timestamp="1587131800169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="581" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587131632947" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1587131545101">
+    <state x="581" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587131800169" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1587131813733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587131545101" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587131813733" />
   </component>
 </project>
