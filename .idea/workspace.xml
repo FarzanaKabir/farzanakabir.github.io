@@ -3,37 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a6fcdae3-03f8-4993-a480-2c5be6507b6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/code/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/code/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/about-me/about-me.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/about-me/about-me.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/about-me/about-me.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/about-me/about-me.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/education/education.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/education/education.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/education/education.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/education/education.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/experience/experience.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/experience/experience.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/experience/experience.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/experience/experience.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/footer/footer.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/footer/footer.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/footer/footer.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/api.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/personal-details/personal-details.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/personal-details/personal-details.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/personal-details/personal-details.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/personal-details/personal-details.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/portfolio/portfolio.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/portfolio/portfolio.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/portfolio/portfolio.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/portfolio/portfolio.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/skills/skills.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/skills/skills.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/skills/skills.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/skills/skills.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +36,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="E:\Rinky\farzanakabir.github.io\code\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -112,7 +91,9 @@
       <workItem from="1587130837067" duration="18000" />
       <workItem from="1587130868656" duration="849000" />
       <workItem from="1587131748944" duration="743000" />
-      <workItem from="1591342832582" duration="728000" />
+      <workItem from="1591342832582" duration="1714000" />
+      <workItem from="1591344890759" duration="5192000" />
+      <workItem from="1591352909749" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1">
       <created>1587131533395</created>
@@ -140,6 +121,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/code/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v0.0.1" />
@@ -172,5 +158,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587132524036" />
+    <state x="1308" y="458" width="350" height="298" key="org.angular.cli.generate" timestamp="1591346768300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1308" y="458" width="350" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1591346768300" />
   </component>
 </project>

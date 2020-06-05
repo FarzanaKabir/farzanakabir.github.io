@@ -1,0 +1,442 @@
+// light theme
+$bg-theme-light: #f2f2f2;
+$color-theme-light: #000;
+$theme-light-bt: #000;
+$fadeTest-theme-light: #9ca9b7;
+$normalTest-theme-light: #525252;
+// Dark theme
+$bg-theme-dark: #ABB8C3;
+$color-theme-dark: #fff;
+$card-bg: #1f222d;
+$theme-dark-bt: #fff;
+$fadeTest-theme-dark: #9ca9b7;
+$normalTest-theme-dark: #d3d4d4;
+
+.loading {
+  height: 100vh;
+  #loader-container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: $bg-theme-light;
+    color: #08aeac;
+    opacity: 0.99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: table;
+  }
+  .loading-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .image-wrap {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .loader-img-animation {
+
+    -webkit-animation: loader-img 2s infinite linear;
+
+    animation: loader-img 2s infinite linear;
+  }
+  @-webkit-keyframes loader-img {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes loader-img {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  .image-wrap img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .loader-name {
+    color: #fafafa;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 200;
+    margin-top: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .loader-name-animation {
+    -webkit-animation: loader-name 2s 1 ease-in;
+    animation: loader-name 2s 1 ease-in;
+  }
+  @-webkit-keyframes loader-name {
+    0% {
+      -webkit-transform: translateX(-200px);
+      transform: translateX(-200px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes loader-name {
+    0% {
+      -webkit-transform: translateX(-200px);
+      transform: translateX(-200px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .loader-job {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 5px;
+    color: #d8d8d8;
+    font-size: 16px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .loader-job-animation {
+    -webkit-animation: loader-job 2s 1 ease-in;
+    animation: loader-job 2s 1 ease-in;
+  }
+  @-webkit-keyframes loader-job {
+    0% {
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes loader-job {
+    0% {
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+}
+
+.loading.theme-dark{
+  #loader-container{
+    background: $bg-theme-dark;
+  }
+}
+
+.home {
+  padding: 25px 0 0 0;
+  background: $bg-theme-light;
+
+  .bold-text {
+    color: $theme-light-bt;
+  }
+
+  .fade-text {
+    color: $fadeTest-theme-light;
+  }
+
+  .normal-text {
+    color: $normalTest-theme-light;
+  }
+
+  .tm {
+    margin-bottom: 3px;
+  }
+
+  .splash {
+    background: #ffffff;
+    margin-bottom: 25px;
+    border: 1px solid #e8ecf1;
+    padding: 25px;
+    text-align: left;
+    @media (max-width: 959px) {
+      text-align: center;
+    }
+
+    .avatar {
+      img {
+        width: 100%;
+        border: 1px solid #e8ecf1;
+        border-radius: 100%;
+        @media (max-width: 959px) {
+          width: 50%;
+        }
+      }
+    }
+
+    .splash__user__name {
+      font-weight: 600;
+      font-size: 26px;
+      margin: 0;
+      @media (max-width: 959px) {
+        margin-top: 15px;
+      }
+    }
+
+    .splash__user__headline {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .splash__user__place {
+      margin: 5px 0;
+    }
+
+    .splash__user__social {
+      margin: 8px auto 0;
+      position: relative;
+      font-size: 18px;
+      color: #9ca9b7;
+
+      .icon {
+        color: #3685d6;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .profile-details__column--clear-left {
+    clear: left;
+  }
+
+  .profile-details__column--no-margin {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .o-page-island--half-spaced {
+    padding: 20px;
+    border: 1px solid #e8ecf1;
+    @media (min-width: 992px) {
+      padding: 15px 30px;
+    }
+  }
+
+  .o-page-island--no-margin {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .o-page-island {
+    background-color: #fff;
+  }
+
+  .profile-details__heading {
+    margin: 20px 0 25px;
+    font-weight: 600;
+    font-size: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .profile-details__sub-heading--faded {
+    font-weight: 100;
+    //color: #606c78;
+  }
+
+  .profile-details__sub-heading {
+    margin-bottom: 2px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .profile-details__about-box {
+    margin: 0 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1f2228;
+    text-align: left;
+    @media (min-width: 992px) {
+      padding-left: 0;
+    }
+  }
+
+  .push--bottom--double {
+    margin-bottom: 20px;
+  }
+
+  .c-experience-rating__name {
+    font-size: 14px;
+    color: #1f2228;
+  }
+
+  .push--top--double {
+    margin-top: 20px;
+  }
+
+  .label-tag {
+    border: 1px solid #3685d6;
+    border-radius: 16px;
+    color: #525252;
+    height: 30px;
+    line-height: 28px;
+    white-space: nowrap;
+    margin: 5px 8px 5px 0;
+    padding: 0 15px;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .profile-details__heading {
+    margin: 20px 0 25px;
+    font-weight: 600;
+    font-size: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .profile-details__heading--no-margin {
+    margin: 0;
+  }
+
+  .profile-details__heading--smaller {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .profile-experience__subheadline {
+    margin-bottom: 0;
+    font-size: 16px;
+    @media (min-width: 992px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .profile-experience__dates {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: right;
+    font-style: italic;
+    @media (max-width: 959px) {
+      text-align: left;
+    }
+  }
+
+  .profile-experience__description {
+    color: #525252;
+    margin: 0;
+  }
+
+  .push--bottom {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  //toggle css start
+  .theme-switcher-wrap {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    @media (max-width: 959px) {
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+
+    .theme-switcher {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 5px;
+
+      .switch-path {
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #ccc;
+
+        .switch-handle {
+          background-color: #999999;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .theme-switcher {
+        display: none;
+      }
+
+      &.active {
+        .switch-path {
+          background-color: #555;
+        }
+
+        .switch-handle {
+          transform: translateX(20px);
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+
+  //toggle css end
+  .o-page-island, .splash {
+    border-radius: 5px;
+  }
+}
+
+//theming
+
+.home.theme-dark {
+  background-color: $bg-theme-dark;
+  color: $color-theme-dark;
+
+  .bold-text {
+    color: $theme-dark-bt;
+  }
+
+  .fade-text {
+    color: $fadeTest-theme-dark;
+  }
+
+  .normal-text {
+    color: $normalTest-theme-dark;
+  }
+
+  .icon {
+    color: #ffffff !important;
+  }
+
+  .o-page-island, .splash, .loading {
+    background-color: $card-bg;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.55) 0 20px 68px;
+  }
+}
