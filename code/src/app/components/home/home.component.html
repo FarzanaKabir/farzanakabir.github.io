@@ -1,9 +1,141 @@
-<div>
-  <app-personal-details></app-personal-details>
-  <app-about-me></app-about-me>
-  <app-experience></app-experience>
-  <app-education></app-education>
-  <app-skills></app-skills>
-  <app-portfolio></app-portfolio>
-  <app-footer></app-footer>
+<div class="loading {{storedTheme}}" *ngIf="!portfolio">
+  <div class="container ld">
+    <h1>Loading...</h1>
+  </div>
 </div>
+<section class="home {{storedTheme}}" *ngIf="portfolio">
+  <div class="container">
+    <div class="splash">
+      <div class="row">
+        <div class="col-md-4 col-lg-2">
+          <div class="avatar">
+            <img src="{{portfolio.profileImg}}" alt="photo">
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-5">
+          <h2 class="splash__user__name bold-text">Emamul Andalib</h2>
+          <p class="splash__user__headline fade-text">6+ Years Backend and DevOps Engineer, Skilled in Django, Rust and
+            Kubernetes, Open source contributor</p>
+          <p class="splash__user__place normal-text">Dhaka, Bangladesh</p>
+          <div class="splash__user__social">
+            <span class="ember-view" *ngFor="let social of portfolio.socialLink"><a href="{{social.link}}" target="_blank" class="icon">
+              <i class="{{social.icon}}"></i></a></span>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-5 text-right">
+          <div class="theme-switcher-wrap">
+            <span><i class="far fa-sun"></i></span>
+            <label [ngClass]="(storedTheme === 'theme-dark')?'theme-switcher active': 'theme-switcher'" (click)="setTheme()">
+              <div class="switch-path">
+                <div class="switch-handle"></div>
+              </div>
+            </label>
+            <span><i class="far fa-moon"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-12 profile-details__column profile-details__column--no-padding profile-details__column--no-margin profile-details__column--clear-left">
+        <div class="o-island o-page-island o-page-island--no-margin o-page-island--half-spaced">
+          <h3 class="profile-details__heading bold-text">About</h3>
+          <h4 class="profile-details__sub-heading profile-details__sub-heading--faded fade-text ">Professional experience</h4>
+          <div class="profile-details__about-box normal-text">6 - 8 years</div>
+          <h4 class="profile-details__sub-heading profile-details__sub-heading--faded fade-text">Contract</h4>
+          <div class="profile-details__about-box normal-text">Full-time</div>
+          <h4 class="profile-details__sub-heading profile-details__sub-heading--faded fade-text">Earliest start date</h4>
+          <div class="profile-details__about-box normal-text">After 1 month notice period</div>
+          <h4 class="profile-details__sub-heading profile-details__sub-heading--faded fade-text">Languages</h4>
+          <ul class="profile-details__about-box normal-text">
+            <li>Bengali (Native)</li>
+            <li> English (Fluent)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 profile-details__column--info profile-details__column profile-details__column--no-padding profile-details__column--no-margin">
+        <div class="o-page-island o-page-island--no-margin o-page-island--half-spaced">
+          <div class="profile-details__experience">
+            <h3 class="profile-details__heading bold-text">Ideal roles</h3>
+            <div class="profile-details__about-box">
+              <div class="row push--bottom--double c-experience-rating" *ngFor="let role of portfolio.roles">
+                <div class="col-md-6 c-experience-rating__name normal-text" >{{role.name}}</div>
+                <div class="col-xs-12 col-md-6 c-experience-rating__rating-container normal-text">{{role.year}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-page-island o-page-island--no-margin o-page-island--half-spaced">
+          <h3 class="profile-details__heading bold-text">Summary</h3>
+          <div class="profile-details__about-box profile-details__about-box--summary" *ngFor="let sum of portfolio.summary">
+            <h4 class="profile-details__sub-heading push--top--double bold-text" style="font-weight: 600">
+              {{sum.heading}}
+            </h4>
+            <div class="js-summary">
+              <P class="normal-text" [innerHTML]="sum.description">
+                {{sum.description}}
+              </P>
+            </div>
+          </div>
+          <div class="profile-details__about-box profile-details__about-box--summary">
+            <h4 class="profile-details__sub-heading push--top--double mb-3 bold-text" style="font-weight: 600">Technical Overview</h4>
+            <div class="js-summary">
+              <ul>
+                <li class="tm" *ngFor="let add of portfolio.additionalInfo">
+                  <span class="mr-1 bold-text" style="font-weight: bold;">{{add.title}}:</span>
+                  <span class="normal-text" *ngFor="let inf of add.info">
+                    {{inf}},
+                  </span>
+                </li>
+              </ul>
+              <p class="normal-text">Other than this I am trying to extend the networking package for Rust to have functionalities like Golang net package.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="o-page-island o-page-island--no-margin o-page-island--half-spaced">
+          <h3 class="profile-details__heading bold-text">Skills</h3>
+          <div class="profile-details__about-box">
+            <span class="label-tag normal-text" *ngFor="let skill of portfolio.skills">{{skill}}</span>
+          </div>
+        </div>
+
+        <div class="o-page-island o-page-island--no-margin o-page-island--half-spaced">
+          <h3 class="profile-details__heading bold-text">Work experience</h3>
+          <ul class="profile-experience__list">
+            <li class="row" *ngFor="let exp of portfolio.workExp">
+              <div class="col-md-6">
+                <h4 class="profile-details__heading bold-text profile-details__heading--no-margin profile-details__heading bold-text--smaller">{{exp.designation}}</h4>
+                <p class="profile-experience__subheadline fade-text">at <span style="font-weight: 500;">{{exp.companyName}}</span></p>
+              </div>
+              <div class="col-md-6 profile-experience__dates fade-text">{{exp.workingTime}}</div>
+              <div class="col-md-12">
+                <div class="profile-experience__description d-flex normal-text mb-2"  *ngFor="let req of exp.requirement; index as i">
+                  <div *ngIf="exp.requirement.length>1" style="font-weight: 500; margin-right: 3px;">{{i+1}}.</div>
+                  <div [innerHTML]="req">{{req}}</div>
+                  <br>
+                </div>
+              </div>
+              <div class="col-md-12 push--bottom">
+                <span class="label-tag normal-text" *ngFor="let tech of exp.techs">{{tech}}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="o-page-island o-page-island--no-margin o-page-island--half-spaced mb-5">
+          <h3 class="profile-details__heading bold-text">Education</h3>
+          <ul class="profile-experience__list">
+            <li class="row" *ngFor="let edu of portfolio.education">
+              <div class="col-md-6">
+                <h4 class="profile-details__heading bold-text profile-details__heading--no-margin profile-details__heading--smaller">{{edu.instituteName}}</h4>
+                <p class="profile-experience__subheadline fade-text">{{edu.degree}} in <span>{{edu.sub}}</span></p>
+              </div>
+              <div class="col-md-6 profile-experience__dates fade-text">{{edu.duration}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
