@@ -302,11 +302,11 @@ $normalTest-theme-dark: #d3d4d4;
     border-radius: 16px;
     color: #525252;
     height: 30px;
-    line-height: 28px;
+    line-height: 30px;
     white-space: nowrap;
     margin: 5px 8px 5px 0;
     padding: 0 15px;
-    font-size: 1rem;
+    font-size: 14px;
     text-align: center;
     display: inline-block;
   }
@@ -348,6 +348,7 @@ $normalTest-theme-dark: #d3d4d4;
   }
 
   .profile-experience__description {
+    font-size: 14px;
     color: #525252;
     margin: 0;
   }

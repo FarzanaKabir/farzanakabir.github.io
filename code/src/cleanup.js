@@ -1,4 +1,4 @@
-import fs from "fs-extra";
+import fs from 'fs-extra'
 
 const codeDir = process.cwd()
 const rootDir = codeDir.replace("code", "")
