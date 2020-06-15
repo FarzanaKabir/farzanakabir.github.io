@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a6fcdae3-03f8-4993-a480-2c5be6507b6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/banner.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/app/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/app/components/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-es2015.883607e0ace8b80b0dd6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-es5.883607e0ace8b80b0dd6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/assets/img/banner.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,8 @@
       <workItem from="1591344890759" duration="5192000" />
       <workItem from="1591352909749" duration="537000" />
       <workItem from="1591499159088" duration="3852000" />
-      <workItem from="1591600351848" duration="1263000" />
+      <workItem from="1591600351848" duration="2073000" />
+      <workItem from="1592221551155" duration="1089000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1">
       <created>1587131533395</created>
